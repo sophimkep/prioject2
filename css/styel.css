@@ -287,11 +287,11 @@ footer {
    text-align: center;
 }
 .form-control {
-   width: 320px;
+   width: 300px;
    padding: 1rem;
 }
 .con-body .map p{
-   margin-left: 5rem;
+   margin-left: 3rem;
    margin-top: -1px;
 }
 .input-group textarea {
