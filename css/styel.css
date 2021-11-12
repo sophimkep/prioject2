@@ -297,3 +297,76 @@ footer {
 .input-group textarea {
    resize: none;
 }
+
+@media screen and (max-width: 1024px){
+
+   .logo {
+      font-size: 1rem;
+   }
+   .nav-container ul li {
+      padding: 0.3rem;
+   }
+   .nav-container ul li {
+      padding: 0.5rem 1rem;
+   }
+   .nav-container ul .active{
+      border: 2px solid #2196F3;
+   }
+   .baner {
+      height: 60vh;
+      background-size: cover;
+   }
+   .banner-right {
+      width: 35%;
+      margin-right: 4rem;
+   }
+   .btn {
+      padding: 8px 1.5rem;
+      font-size: 1rem;
+   }
+   .banner-right h1{
+      font-size: 1rem;
+   }
+   .banner-right p{
+      font-size: 15px;
+   }
+   .body .card {
+      width: 350px;
+      padding: 1rem;
+   }
+   .card p{
+      text-align: left;
+   }
+   .card-container {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      flex-wrap: wrap;
+      gap: 3rem;
+      text-align: center;
+   }
+   footer {
+      padding: 1.rem;
+   }
+   .social .icons {
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+   }
+
+   .content-left h1 {
+      font-size: 1.5rem;
+   }
+   .content-left p {
+      font-size: 14px;
+   }
+   .box h3 {
+      font-size: 1.1rem;
+   }
+   .box p {
+      font-size: 0.8rem;
+   }
+   .conten-right {
+      height: 75vh;
+      margin-bottom: 3rem;
+   }
+}
