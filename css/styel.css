@@ -380,7 +380,7 @@ input {
       display: block;
    }
    nav ul{
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: 100vh;
       background: #12467a;
@@ -404,4 +404,307 @@ input {
    #check:checked ~ ul {
       left: 0;
    }
+}
+@media (max-width: 375px){
+   label.logo{
+      font-size: 20px;
+      padding: 0 40px;
+   }
+   .baner {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url(../images/banner.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   .btn {
+      background: #2196F3;
+      color: #fff;
+      border: none;
+      padding: 10px 1rem;
+      font-size: 1rem;
+      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
+   }
+   
+   .banner-right {
+      width: 80%;
+      margin: auto;
+      color: white;
+   }
+   .banner-right h1{
+      font-size: 20px;
+   }
+   .banner-right p {
+      font-size: 10px;
+      margin-top: 2rem;
+   }
+   .body {
+      display: grid;
+      justify-content: center;
+   }
+   .card-container {
+      display: grid;
+      gap: 2rem;
+      text-align: center;
+   }
+   .body .card h2 {
+      background: #2196F3;
+      color: white;
+      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
+      padding: 0.5rem;
+   }
+   .body .card {
+      background: white;
+      width: 300px;
+      padding: 1.5rem;
+      border-radius: 7px;
+      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
+   }
+   footer {
+      background: #90CAF9;
+      padding: 2rem;
+   }
+   .foot-container {
+      width: 80%;
+      margin: auto;
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+   }
+   .copy {
+      display: flex;
+      align-items: center;
+      width: 100%;
+   }
+   .copy p{
+      font-size: 13px;
+   }
+   .center {
+      margin-top: 1rem;
+   }
+   .copy i {
+      font-size: 1.5rem;
+   }
+   
+   .social {
+      display: flex;
+   }
+   .social a{
+      color: white;
+      font-size: 30px;
+   }
+   .social .icons {
+      margin-left: 1rem;
+      background: #2196F3;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+   }
+   footer .btn {
+      margin-top: 0;
+      margin-bottom: 10px;
+   }
+   .about {
+      background: #90CAF9;
+   }
+   .contents {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50vh;
+      padding: 2rem;
+   }
+   .content-left {
+      width: 90%;
+      margin: auto;
+   }
+   .content-left h1 {
+      font-size: 1.5rem;
+   }
+   .content-left p{
+      font-size: 15px;
+   }
+   .content-right img{
+      display: none;
+   }
+   .sub-content{
+      margin-top: -16px;
+   }
+   .box-container {
+      width: 92%;
+      margin: auto;
+      padding: 1rem;
+      display: grid;
+   }
+   .box p {
+      margin-top: 2rem;
+   }
+   .box {
+      margin-top: 1.5rem;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+      border-radius: 7px;
+   }
+   .box .head span{
+      background: white;
+      padding: 1rem 1.6rem;
+      border-radius: 50%;
+      color: #2196F3;
+      font-size: 1.5rem;
+   }
+   .box .head {
+      margin-bottom: 2rem;
+   }
+   .color {
+      background: white;
+      color: #2196F3;
+   }
+   
+   .last-content {
+      display: grid;
+      margin-top: 1rem;
+   }
+   .last-content .education {
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      background: white;
+      box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.75);
+   }
+   .last-content .education .text {
+      margin-left: 15px;
+      width: 90%;
+   }
+   .education h2 {
+      background: #2196F3;
+      color: white;
+      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
+      padding: 0.5rem;
+      text-align: center;
+   }
+   .hob-card {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+   }
+   .hob-card .cards {
+      background: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.75);
+   }
+   .hob-card .cards img {
+      width: 250px;
+      height: 200px;
+   }
+   .cards .card {
+      height: 50vh;
+   }
+   .con-container {
+      width: 90%;
+      margin: auto;
+      background: #2196F3;
+      padding: 2rem;
+      text-align: center;
+   }
+   .con-box h1 {
+      text-align: left;
+      font-size: 1rem;
+   }
+   .con-container .con-box {
+      background: white;
+      padding: 2rem;
+   }
+   .con-container .marks {
+      display: block;
+      gap: 1rem;
+   }
+   .con-container .marks .mark1 {
+      width: 90%;
+      text-align: left;
+   }
+   .mark2 .contact {
+      display: flex;
+      gap: 1rem;
+   }
+   .mark2 {
+      width: 100%;
+      margin-right: 10px;
+      text-align: center;
+   }
+   .contact p{
+      font-size: 12px;
+   }
+   .contact i {
+      font-size: 1rem;
+      margin-top: 1rem;
+   }
+   .mark3 {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+   }
+   .mark3 i {
+      font-size: 2rem;
+   }
+   
+   .con-body {
+      display: block;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+   }
+   .contact p {
+      margin-top: 15px;
+   }
+   .contact {
+      margin-left: 2rem;
+   }
+   .input-group {
+      box-sizing: border-box;
+      width: 100%;
+   }
+   .form-group {
+      width: 100%;
+      display: block;
+   }
+   .form-control {
+      width: 100%;
+      outline: none;
+      margin-top: 10px;
+   }
+   .con-body .map {
+      margin-top: 2rem;
+   }
+   input {
+      padding: 15px;
+   }
+   .input-group textarea {
+      resize: none;
+   }
+   .text-area {
+      margin-top: 2rem;
+      width: 100%;
+      height: 35vh;
+      outline: none;
+      padding: 15px;
+   }
+   .map {
+      width: 100%;
+   }
+   .map iframe{
+      width: 270px;
+      height: 300px;
+   }
+   
 }
