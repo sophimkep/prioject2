@@ -606,12 +606,16 @@ footer {
    }
    .hob-card .cards{
       box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.75);
-      width: 250px;
+      width: 90%;
       text-align: center;
       margin: auto;
    }
    .hob-card .cards img{
       width: 250px;
       height: 200px;
+   }
+   .hob-card .cards .btn {
+      padding: 5px 1rem;
+      font-size: 1.3rem;
    }
 }
