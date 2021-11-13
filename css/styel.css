@@ -118,7 +118,9 @@ nav ul li a:hover{
    border-radius: 7px;
    box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
 }
-
+.mgt {
+   margin-top: 2rem;
+}
 /* footer */
 footer {
    background: #90CAF9;
@@ -137,9 +139,13 @@ footer {
    align-items: center;
    margin-top: 1.5rem;
    width: 40%;
+   
 }
 .copy p{
    margin-left: 5px;
+}
+.center {
+   margin-top: 2rem;
 }
 .copy i {
    font-size: 1.5rem;
@@ -166,9 +172,12 @@ footer {
 }
 
 /* about page */
+.about {
+   background: #90CAF9;
+}
 .contents {
-   background-size: cover;
-   background-repeat: no-repeat;
+   width: 90%;
+   margin: auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -179,19 +188,23 @@ footer {
    width: 40%;
    text-align: center;
    margin-bottom: 4rem;
-   float: right;
    margin-right: 3rem;
+   margin-top: 4rem;
 }
-.sub-content {
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   justify-content: center;
-   align-items: center;
+.content-right img{
+   width: 400px;
+}
+.sub-content{
+   margin-top: -16px;
 }
 .box-container {
+   width: 85%;
+   margin: auto;
    padding: 1rem;
    display: flex;
-   margin-top: -5px;
+}
+.box p {
+   margin-top: 2rem;
 }
 .box {
    text-align: center;
@@ -223,6 +236,8 @@ footer {
 }
 
 .last-content {
+   width: 83%;
+   margin: auto;
    display: flex;
    gap: 2rem;
    justify-content: space-between;
@@ -231,8 +246,8 @@ footer {
    background: white;
    text-align: center;
    width: 43%;
-   padding: 1.5rem;
-   box-shadow: 0px 8px 7px 4px rgba(0,0,0,0.3);
+   padding: 2rem;
+   box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.75);
 }
 .last-content .education .text {
    width: 60%;
@@ -244,11 +259,14 @@ footer {
    color: white;
    box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
    padding: 0.5rem;
+   text-align: center;
 }
 
 /* hobbies page */
 
 .hob-card {
+   width: 80%;
+   margin: auto;
    display: grid;
    grid-template-columns: repeat(3,1fr);
    gap: 2rem;
@@ -257,6 +275,7 @@ footer {
    background: white;
    padding: 2rem;
    text-align: center;
+   box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.75);
 }
 .hob-card .cards img {
    width: 300px;
@@ -273,6 +292,12 @@ footer {
    background: #2196F3;
    padding: 2rem;
    text-align: center;
+}
+.active {
+   background: #42A5F5;
+}
+.con-box h1 {
+   text-align: left;
 }
 .con-container .con-box {
    background: white;
@@ -292,7 +317,6 @@ footer {
 }
 .mark2 {
    width: 30%;
-   margin-left: 4rem;
 }
 .contact i {
    font-size: 2rem;
@@ -310,11 +334,16 @@ footer {
    display: flex;
    gap: 2rem;
 }
+.contact p {
+   margin-top: 15px;
+}
+.contact {
+   margin-left: 2rem;
+}
 .input-group {
    box-sizing: border-box;
    width: 60%;
    margin-top: 2rem;
-   text-align: center;
 }
 .form-group {
    width: 100%;
@@ -346,101 +375,6 @@ input {
 }
 
 
-
-@media (max-width: 1023px){
-   label.logo{
-      font-size: 30px;
-      padding: 50px;
-   }
-   nav ul li a {
-      font-size: 16px;
-   }
-   .baner {
-      background-image: url(../images/banner.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 80vh;
-   }
-   .btn {
-      background: #2196F3;
-      color: #fff;
-      border: none;
-      padding: 5px 0.5rem;
-      font-size: 1rem;
-      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
-   }
-   
-   .banner-right {
-      float: right;
-      width: 40%;
-      text-align: center;
-      margin-right: 2rem;
-      color: white;
-   }
-   .banner-right h1 {
-      font-size: 1.2rem;
-   }
-   .banner-right p {
-      font-size: 0.8rem;
-   }
-   .body {
-      display: flex;
-   }
-   .card-container {
-      display: flex;
-      gap: 2rem;
-      text-align: center;
-   }
-   .body .card h2 {
-      background: #2196F3;
-      color: white;
-      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
-      padding: 5px 5px;
-      font-size: 1rem;
-      margin-bottom: 1rem;
-   }
-   .body .card p {
-      font-size: 13px;
-   }
-   .body .card {
-      background: white;
-      width: 250px;
-      padding: 2rem;
-      border-radius: 7px;
-      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
-   }
-   .social .icons {
-      margin-left: 2rem;
-      font-size: 25px;
-      background: #2196F3;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 1rem;
-   }
-   footer label.logo{
-      font-size: 1.5rem;
-   }
-   footer .btn {
-      margin-top: 0;
-   }
-   .copy {
-      width: 30%;
-   }
-   .copy p{
-      font-size: 0.6rem;
-   }
-   .copy i {
-      font-size: 1rem;
-   }
-   .social a{
-      color: white;
-      font-size: 20px;
-   }
-}
 @media (max-width: 768px){
    .checkbtn {
       display: block;
@@ -473,231 +407,5 @@ input {
    }
    #check:checked ~ ul {
       left: 0;
-   }
-   .baner {
-      background-image: url(../images/banner.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 80vh;
-   }
-   .banner-right {
-      width: 30%;
-   }
-   .banner-right h1 {
-      font-size: 1rem;
-   }
-   .banner-right p {
-      font-size: 0.8rem;
-   }
-   .body {
-      display: grid;
-   }
-   .card-container {
-      display: grid;
-      gap: 2rem;
-      text-align: center;
-   }
-   .body .card h2 {
-      background: #2196F3;
-      color: white;
-      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
-      padding: 5px 5px;
-      font-size: 1rem;
-      margin-bottom: 1rem;
-   }
-   .body .card p {
-      font-size: 13px;
-   }
-   .body .card {
-      background: white;
-      width: 250px;
-      padding: 2rem;
-      border-radius: 7px;
-      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
-   }
-   .social .icons {
-      margin-left: 2rem;
-      font-size: 25px;
-      background: #2196F3;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 1rem;
-   }
-   footer label.logo{
-      font-size: 1rem;
-   }
-   footer .btn {
-      margin-top: 0;
-   }
-   .copy {
-      width: 30%;
-   }
-   .copy p{
-      font-size: 0.5rem;
-   }
-   .copy i {
-      font-size: 0.8rem;
-   }
-   .social a{
-      color: white;
-      font-size: 16px;
-   }
-   .social .icons {
-      height: 30px;
-      width: 30px;
-      margin-left: 0.8rem;
-   }
-   .center {
-      width: 40%;
-   }
-}
-@media (min-width: 360px){
-   .baner {
-      background-image: url(../images/banner.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-   }
-   .btn {
-      background: white;
-      color: #2196F3;
-      border: none;
-      padding: 5px 0.5rem;
-      font-size: 0.7rem;
-      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
-   }
-   .banner-right h1 {
-      font-size: 1rem;
-      color: #000;
-   }
-   .banner-right p {
-      font-size: 14px;
-      color: #000;
-   }
-   .banner-right {
-      width: 80%;
-   }
-   .body {
-      display: grid;
-   }
-   .card-container {
-      display: grid;
-      gap: 2rem;
-      text-align: center;
-   }
-   .body .card h2 {
-      background: #2196F3;
-      color: white;
-      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
-      padding: 5px 5px;
-      font-size: 1rem;
-      margin-bottom: 1rem;
-   }
-   .body .card p {
-      font-size: 13px;
-   }
-   .body .card {
-      background: white;
-      width: 250px;
-      padding: 2rem;
-      border-radius: 7px;
-      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
-   }
-   .foot-container {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-   }
-   .center {
-      width: 100%;
-      display: grid;
-   }
-   .copy , .logo{
-      width: 100%;
-      margin-bottom: -60px;
-   }
-   .btn {
-      margin-bottom: 10px;
-   }
-   footer {
-      padding: 10px;
-   }
-   .hob-card {
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      gap: 2rem;
-      font-size: 0.8rem;
-      justify-content: center;
-      align-items: center;
-      
-   }
-   .hob-card .cards{
-      box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.75);
-      width: 90%;
-      text-align: center;
-      margin: auto;
-   }
-   .hob-card .cards img{
-      width: 250px;
-      height: 200px;
-   }
-   .hob-card .cards .btn {
-      padding: 5px 1rem;
-      font-size: 1.3rem;
-   }
-   .con-container .marks {
-      display: grid;
-      gap: 1rem;
-      justify-content: center;
-      align-items: center;
-   }
-   .con-container .marks .mark1, .mark2, .mark3 {
-      width: 80%;
-      margin: auto;
-   }
-   .con-box h1 {
-      font-size: 1.5rem;
-      margin: auto;
-      width: 80%;
-   }
-   .con-box p {
-      font-size: 0.8rem;
-   }
-   .contact i {
-      margin-top: 5px;
-   }
-   .contact p {
-      margin-top: 5px;
-   }
-   .con-body {
-      display: grid;
-      width: 90%;
-      margin: auto;
-   }
-   .form-group {
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-   }
-   .input-group{
-      width: 98%;
-      margin: auto;
-      margin-top: 1rem;
-   }
-   .map iframe{
-      width: 250px;
-      height: 350px;
-   }
-   .con-body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-   .input-group .btn{
-      padding: 10px;
-      width: 100%;
-      font-size: 20px;
    }
 }
