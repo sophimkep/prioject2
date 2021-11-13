@@ -533,11 +533,8 @@ footer {
 @media (max-width: 580px){
    .baner {
       background-image: url(../images/banner.jpg);
-      background-size: contain;
       background-repeat: no-repeat;
-   }
-   .banner-right {
-      margin-bottom: 200px;
+      background-size: contain;
    }
    .btn {
       background: #2196F3;
@@ -555,7 +552,6 @@ footer {
    }
    .body {
       display: grid;
-      margin-top: -160px;
    }
    .card-container {
       display: grid;
@@ -598,5 +594,21 @@ footer {
    }
    footer {
       padding: 10px;
+   }
+   .hob-card {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap: 2rem;
+      font-size: 0.8rem;
+      
+   }
+   .hob-card .cards{
+      box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.75);
+      width: 400px;
+      margin: auto;
+   }
+   .hob-card .cards img{
+      width: 250px;
+      height: 200px;
    }
 }
