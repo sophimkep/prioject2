@@ -555,25 +555,30 @@ input {
       width: 40%;
    }
 }
-@media (max-width: 580px){
+@media (min-width: 360px){
    .baner {
       background-image: url(../images/banner.jpg);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
    }
    .btn {
-      background: #2196F3;
-      color: #fff;
+      background: white;
+      color: #2196F3;
       border: none;
-      padding: 3px 0.5rem;
-      font-size: 0.5rem;
+      padding: 5px 0.5rem;
+      font-size: 0.7rem;
       box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
    }
    .banner-right h1 {
-      font-size: 0.6rem;
+      font-size: 1rem;
+      color: #000;
    }
    .banner-right p {
-      font-size: 8px;
+      font-size: 14px;
+      color: #000;
+   }
+   .banner-right {
+      width: 80%;
    }
    .body {
       display: grid;
@@ -682,7 +687,7 @@ input {
       margin-top: 1rem;
    }
    .map iframe{
-      width: 400px;
+      width: 250px;
       height: 350px;
    }
    .con-body {
