@@ -449,14 +449,20 @@ footer {
    #check:checked ~ ul {
       left: 0;
    }
+   .baner {
+      background-image: url(../images/banner.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 80vh;
+   }
    .banner-right {
       width: 30%;
    }
    .banner-right h1 {
-      font-size: 0.8rem;
+      font-size: 1rem;
    }
    .banner-right p {
-      font-size: 0.5rem;
+      font-size: 0.8rem;
    }
    .body {
       display: grid;
@@ -522,5 +528,75 @@ footer {
    }
    .center {
       width: 40%;
+   }
+}
+@media (max-width: 580px){
+   .baner {
+      background-image: url(../images/banner.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+   }
+   .banner-right {
+      margin-bottom: 200px;
+   }
+   .btn {
+      background: #2196F3;
+      color: #fff;
+      border: none;
+      padding: 3px 0.5rem;
+      font-size: 0.5rem;
+      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
+   }
+   .banner-right h1 {
+      font-size: 0.6rem;
+   }
+   .banner-right p {
+      font-size: 8px;
+   }
+   .body {
+      display: grid;
+      margin-top: -160px;
+   }
+   .card-container {
+      display: grid;
+      gap: 2rem;
+      text-align: center;
+   }
+   .body .card h2 {
+      background: #2196F3;
+      color: white;
+      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
+      padding: 5px 5px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+   }
+   .body .card p {
+      font-size: 13px;
+   }
+   .body .card {
+      background: white;
+      width: 250px;
+      padding: 2rem;
+      border-radius: 7px;
+      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
+   }
+   .foot-container {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+   }
+   .center {
+      width: 100%;
+      display: grid;
+   }
+   .copy , .logo{
+      width: 100%;
+      margin-bottom: -60px;
+   }
+   .btn {
+      margin-bottom: 10px;
+   }
+   footer {
+      padding: 10px;
    }
 }
