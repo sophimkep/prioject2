@@ -691,6 +691,7 @@ input {
       outline: none;
       margin-top: 10px;
       background: #fff;
+      border: none;
    }
    .con-body .map {
       margin-top: 2rem;
