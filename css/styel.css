@@ -325,6 +325,9 @@ footer {
 .mark2 {
    width: 30%;
 }
+.mark2 a{
+   color: #1E88E5;
+}
 .contact i {
    font-size: 2rem;
    margin-top: 1rem;
