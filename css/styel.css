@@ -8,6 +8,7 @@
 }
 body {
    font-family: 'Open Sans', sans-serif;
+   overflow-x: hidden;
 }
 nav {
    height: 80px;
@@ -60,9 +61,6 @@ nav ul li a:hover{
    background: white;
    color: #1E88E5;
 }
-
-/* navigation */
-
 
 /* banner */
 
@@ -167,7 +165,6 @@ footer {
 }
 .social .icons {
    margin-left: 2rem;
-   
    background: #2196F3;
    height: 50px;
    width: 50px;
@@ -177,7 +174,10 @@ footer {
    align-items: center;
    margin-top: 1rem;
 }
-
+footer a label.logo:hover{
+   cursor: pointer;
+   color: #1E88E5;
+}
 /* about page */
 .about {
    background: #90CAF9;
@@ -381,13 +381,91 @@ input {
    height: 35vh;
    outline: none;
 }
+.map {
+   width: 40%;
+}
 .map iframe{
-   width: 500px;
+   width: 100%;
    height: 450px;
 }
-
-
-@media (max-width: 768px){
+@media (max-width: 1024px){
+   .baner {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80vh;
+      background-image: url(../images/banner.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   .map iframe{
+      width: 100%;
+      height: 450px;
+   }
+}
+@media (max-width: 900px){
+   .baner {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80vh;
+      background-image: url(../images/banner.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   nav ul {
+      float: right;
+      margin-right: 10px;
+   }
+   label.logo {
+      padding: 0 40px;
+   }
+   .card-container {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      flex-wrap: wrap;
+      gap: 2rem;
+      text-align: center;
+   }
+   .social {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+   }
+   .social a{
+      color: white;
+      font-size: 25px;
+   }
+   .social .icons {
+      margin-left: 2rem;
+      background: #2196F3;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+   }
+   .hob-card {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .map iframe{
+      width: 100%;
+      height: 450px;
+   }
+   .input-group {
+      box-sizing: border-box;
+      width: 60%;
+      margin-top: 2rem;
+   }
+}
+@media (max-width: 767px){
    .checkbtn {
       display: block;
    }
@@ -416,10 +494,11 @@ input {
    #check:checked ~ ul {
       left: 0;
    }
-   label.logo{
-      font-size: 20px;
+   label.logo {
       padding: 0 40px;
-      margin-right: 10px;
+   }
+   .center .logo{
+      font-size: 20px;
    }
    .baner {
       width: 100%;
@@ -435,28 +514,35 @@ input {
       color: #fff;
       border: none;
       padding: 10px 1.3rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
       box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
    }
    
    .banner-right {
       width: 80%;
       margin: auto;
-      color: whitesmoke;
+      color: #000;
+      font-weight: bold;
    }
    .banner-right h1{
-      font-size: 2.5rem;
+      font-size: 1.5rem;
    }
    .banner-right p {
-      font-size: 2rem;
+      font-size: 1rem;
       margin-top: 2rem;
+      color: #000;
+      font-weight: bold;
    }
    .body {
       display: grid;
       justify-content: center;
+      width: 90%;
+      margin: auto;
    }
    .card-container {
+      margin-top: 2rem;
       display: grid;
+      grid-template-columns: repeat(1,1fr);
       gap: 2rem;
       text-align: center;
    }
@@ -466,13 +552,17 @@ input {
       box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
       padding: 0.5rem;
       font-size: 2rem;
+      margin-bottom: 2rem;
    }
    .body .card p{
       font-size: 1.5rem;
+      width: 60%;
+      margin: auto;
+      text-align: left;
    }
    .body .card {
       background: white;
-      width: 600px;
+      width: 100%;
       padding: 2rem;
       border-radius: 7px;
       box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
@@ -480,15 +570,11 @@ input {
    footer {
       background: #90CAF9;
       padding: 2rem;
-      text-align: center;
-   }
-   label.logo{
-      font-size: 2rem;
    }
    .foot-container {
-      width: 80%;
+      width: 83%;
       margin: auto;
-      display: grid;
+      display: block;
       justify-content: space-between;
       align-items: center;
       text-align: center;
@@ -496,30 +582,34 @@ input {
    .copy {
       display: flex;
       align-items: center;
-      width: 100%;
+      width: 80%;
+      margin: auto;
    }
    .copy p{
-      font-size: 25px;
+      font-size: 16px;
    }
    .center {
       margin-top: 1rem;
-      width: 60%;
-      margin-left: 7rem;
+      width: 70%;
+      margin: auto;
+   }
+   .center a label.logo {
+      font-size: 35px;
    }
    .copy i {
       font-size: 2rem;
-      margin-left: 15px;
    }
    .social {
       display: flex;
+      justify-content: center;
       margin: auto;
    }
    .social a{
       color: white;
-      font-size: 30px;
+      font-size: 25px;
    }
    .social .icons {
-      margin: 15px;
+      margin-left: 2rem;
       background: #2196F3;
       height: 50px;
       width: 50px;
@@ -532,6 +622,7 @@ input {
    footer .btn {
       margin-top: 0;
       margin-bottom: 10px;
+      font-size: 1.3rem;
    }
    .about {
       background: #90CAF9;
@@ -542,7 +633,7 @@ input {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 40vh;
+      height: 50vh;
       padding: 2rem;
    }
    .content-left {
@@ -550,10 +641,14 @@ input {
       margin: auto;
    }
    .content-left h1 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
    }
    .content-left p{
-      font-size: 20px;
+      font-size: 15px;
+      margin-top: 2rem;
+   }
+   .content-left .btn{
+      font-size: 1.2rem;
    }
    .content-right img{
       display: none;
@@ -568,10 +663,9 @@ input {
       display: grid;
    }
    .box p {
-      font-size: 25px;
-      width: 70%;
+      font-size: 20px;
+      width: 80%;
       margin: auto;
-      text-align: center;
    }
    .box h2 {
       font-size: 2rem;
@@ -611,14 +705,14 @@ input {
       box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.75);
    }
    .last-content .education .text {
-      margin-left: 30px;
       width: 80%;
+      margin: auto;
    }
    .last-content .education .text p {
       font-size: 20px;
    }
    .last-content .education .text h3 {
-      font-size: 2rem;
+      font-size: 1.5rem;
    }
    .education h2 {
       background: #2196F3;
@@ -626,7 +720,7 @@ input {
       box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
       padding: 0.5rem;
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.5rem;
    }
    .hob-card {
       display: grid;
@@ -635,19 +729,16 @@ input {
    }
    .hob-card .cards {
       background: white;
-      padding: 2.5rem;
+      padding: 2rem;
       text-align: center;
       box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.75);
    }
    .hob-card .cards p {
-      font-size: 2rem;
+      font-size: 1.6rem;
    }
    .hob-card .cards img {
-      width: 300px;
-      height: 260px;
-   }
-   .cards .card {
-      height: 50vh;
+      width: 60%;
+      height: 265px;
    }
    .con-container {
       width: 90%;
@@ -728,13 +819,17 @@ input {
       margin-top: 10px;
       background: #fff;
       border: none;
-      padding: 1.5rem;
+      padding: 1rem;
    }
    .con-body .map {
       margin-top: 2rem;
    }
    .input-group textarea {
       resize: none;
+   }
+   .input-group .btn{
+      padding: 10px 1rem;
+      font-size: 1.5rem;
    }
    .text-area {
       margin-top: 2rem;
@@ -748,8 +843,111 @@ input {
       width: 100%;
    }
    .map iframe{
-      width: 600px;
+      width: 100%;
       height: 400px;
+   }
+}
+@media (max-width: 500px){
+   .baner {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-image: url(../images/banner.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+   .btn {
+      background: #2196F3;
+      color: #fff;
+      border: none;
+      padding: 10px 1.3rem;
+      font-size: 1.5rem;
+      box-shadow: -1px 7px 5px -1px rgba(0,0,0,0.49);
+   }
+   .contents {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80vh;
+      padding: 2rem;
+   }
+   .body .card p {
+      width: 90%;
+      text-align: left;
+   }
+   .hob-card .cards img {
+      width: 60%;
+      height: 200px;
+   }
+   footer {
+      background: #90CAF9;
+      padding: 2rem;
+   }
+   .foot-container {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 0;
+   }
+   .copy {
+      display: flex;
+      align-items: center;
+      width: 100%;
+   }
+   .copy p{
+      font-size: 20px;
+   }
+   .center {
+      margin-top: 1rem;
+      width: 70%;
+      margin: auto;
+   }
+   .center a label.logo {
+      font-size: 35px;
+   }
+   .copy i {
+      font-size: 2rem;
+   }
+   .social {
+      display: flex;
+      margin: auto;
+   }
+   .social a{
+      color: white;
+      font-size: 25px;
+   }
+   .social .icons {
+      margin: 15px;
+      background: #2196F3;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+   }
+   footer .btn {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+   }
+   .box .head span{
+      background: white;
+      padding: 0.4rem 1rem;
+      border-radius: 50%;
+      color: #2196F3;
+      font-size: 1.5rem;
+   }
+   .hob-card {
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
    }
 }
 @media (max-width: 375px){
@@ -782,11 +980,16 @@ input {
       color: whitesmoke;
    }
    .banner-right h1{
-      font-size: 1.5rem;
+      font-size: 1rem;
    }
    .banner-right p {
-      font-size: 15px;
+      font-size: 13px;
       margin-top: 2rem;
+      color: white;
+      font-weight: normal;
+   }
+   .about {
+      height: 80vh;
    }
    .body {
       display: grid;
@@ -794,6 +997,7 @@ input {
    }
    .card-container {
       display: grid;
+      grid-template-columns: repeat(1,1fr);
       gap: 2rem;
       text-align: center;
    }
@@ -817,8 +1021,8 @@ input {
       background: #90CAF9;
       padding: 2rem;
    }
-   footer label.logo{
-      font-size: 16px;
+   footer a label.logo{
+      font-size: 14px;
       padding: 0 20px;
       margin-right: 10px;
    }
@@ -839,8 +1043,7 @@ input {
       font-size: 12px;
    }
    .center {
-      margin-top: 1rem;
-      margin-left: 50px;
+      width: 100%;
    }
    .copy i {
       font-size: 1rem;
@@ -851,23 +1054,24 @@ input {
    }
    .social a{
       color: white;
-      font-size: 30px;
+      font-size: 20px;
    }
    .social .icons {
       margin-left: 0.5rem;
       background: #2196F3;
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       margin-left: 0;
    }
    footer .btn {
       margin-top: 0;
       margin-bottom: 10px;
+      font-size: 1rem;
    }
    .about {
       background: #90CAF9;
@@ -920,10 +1124,10 @@ input {
    }
    .box .head span{
       background: white;
-      padding: 1rem 1.6rem;
+      padding: 12px 18px;
       border-radius: 50%;
       color: #2196F3;
-      font-size: 1.5rem;
+      font-size: 1rem;
    }
    .box .head {
       margin-bottom: 2rem;
@@ -974,8 +1178,8 @@ input {
       box-shadow: 0px 5px 18px 2px rgba(0,0,0,0.75);
    }
    .hob-card .cards img {
-      width: 250px;
-      height: 220px;
+      width: 60%;
+      height: 150px;
    }
    .hob-card .cards p {
       font-size: 16px;
@@ -1079,11 +1283,8 @@ input {
       padding: 15px;
       background: #fff;
    }
-   .map {
-      width: 100%;
-   }
    .map iframe{
-      width: 250px;
+      width: 100%;
       height: 300px;
    }
    
