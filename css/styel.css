@@ -416,6 +416,7 @@ input {
    label.logo{
       font-size: 20px;
       padding: 0 40px;
+      margin-right: 10px;
    }
    .baner {
       width: 100%;
@@ -438,7 +439,7 @@ input {
    .banner-right {
       width: 80%;
       margin: auto;
-      color: white;
+      color: whitesmoke;
    }
    .banner-right h1{
       font-size: 20px;
@@ -487,15 +488,15 @@ input {
       width: 100%;
    }
    .copy p{
-      font-size: 13px;
+      font-size: 10px;
    }
    .center {
       margin-top: 1rem;
    }
    .copy i {
-      font-size: 1.5rem;
+      font-size: 1rem;
+      margin-left: 15px;
    }
-   
    .social {
       display: flex;
    }
@@ -504,7 +505,7 @@ input {
       font-size: 30px;
    }
    .social .icons {
-      margin-left: 1rem;
+      margin-left: 0.5rem;
       background: #2196F3;
       height: 50px;
       width: 50px;
@@ -535,10 +536,10 @@ input {
       margin: auto;
    }
    .content-left h1 {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
    }
    .content-left p{
-      font-size: 15px;
+      font-size: 10px;
    }
    .content-right img{
       display: none;
