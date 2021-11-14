@@ -690,6 +690,7 @@ input {
       width: 100%;
       outline: none;
       margin-top: 10px;
+      background: #fff;
    }
    .con-body .map {
       margin-top: 2rem;
@@ -706,6 +707,7 @@ input {
       height: 35vh;
       outline: none;
       padding: 15px;
+      background: #fff;
    }
    .map {
       width: 100%;
