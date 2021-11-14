@@ -779,10 +779,10 @@ input {
       color: whitesmoke;
    }
    .banner-right h1{
-      font-size: 20px;
+      font-size: 1.5rem;
    }
    .banner-right p {
-      font-size: 10px;
+      font-size: 15px;
       margin-top: 2rem;
    }
    .body {
@@ -886,7 +886,7 @@ input {
       font-size: 1.1rem;
    }
    .content-left p{
-      font-size: 12px;
+      font-size: 14px;
    }
    .content-right img{
       display: none;
@@ -906,7 +906,7 @@ input {
       width: 90%;
    }
    .box h2 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
    }
    .box {
       margin-top: 1.5rem;
@@ -972,7 +972,10 @@ input {
    }
    .hob-card .cards img {
       width: 250px;
-      height: 200px;
+      height: 220px;
+   }
+   .hob-card .cards p {
+      font-size: 16px;
    }
    .cards .card {
       height: 50vh;
@@ -1077,7 +1080,7 @@ input {
       width: 100%;
    }
    .map iframe{
-      width: 270px;
+      width: 250px;
       height: 300px;
    }
    
