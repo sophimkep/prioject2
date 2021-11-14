@@ -18,9 +18,12 @@ label.logo {
    color: white;
    font-size: 30px;
    line-height: 80px;
-   padding: 0 100px;
+   padding: 0 80px;
    font-weight: bold;
    font-family: 'Cookie', cursive;
+}
+ul {
+   padding: 0 50px;
 }
 nav ul {
    float: right;
@@ -52,6 +55,10 @@ nav ul li a:hover{
 }
 #check {
    display: none;
+}
+.btn:hover{
+   background: white;
+   color: #1E88E5;
 }
 
 /* navigation */
